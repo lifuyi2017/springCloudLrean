@@ -24,5 +24,6 @@ public class ServiceHiApplication {
 	public String home(@RequestParam String name) {
 		return "hi "+name+",i am from port:" +port;
 	}
+
 }
 

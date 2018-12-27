@@ -20,7 +20,6 @@ public class HelloControler {
 
     @RequestMapping(value = "/hi")
     public String hi(@RequestParam String name){
-        System.out.println("djsdjsd");
         return helloService.hiService(name);
     }
 

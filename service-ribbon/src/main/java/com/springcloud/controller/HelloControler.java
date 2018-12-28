@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  */
 @RestController
-@RequestMapping(value = "ribbon")
 public class HelloControler {
 
     @Autowired

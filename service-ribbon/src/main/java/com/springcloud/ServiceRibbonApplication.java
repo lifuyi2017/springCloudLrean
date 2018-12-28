@@ -15,7 +15,6 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@RestController
 @EnableHystrix
 @EnableHystrixDashboard
 public class ServiceRibbonApplication {
@@ -30,11 +29,6 @@ public class ServiceRibbonApplication {
 		return new RestTemplate();
 	}
 
-
-	@RequestMapping("/test")
-	public String home() {
-		return "hi test";
-	}
 
 	/**
 	 * 解决Spring Boot 2.0 下 hystrix.stream 404 问题

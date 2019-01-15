@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/forezp/SpringcloudConfig/
+          uri: https://github.com/lifuyi2017/SpringcloudConfig/
           search-paths: respo
           username: lifuyi2017
           password: 235145lifuyi.
@@ -16,4 +16,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
